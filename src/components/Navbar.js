@@ -13,7 +13,7 @@ const Navbar = () => {
   // console.log(hex);
 
   return (
-    <div className={`fixed top-0 left-0 w-full   z-40  md:h-16 h-auto`} >
+    <div className={`fixed top-0 left-0 w-full bg-rose-300  z-40  md:h-16 h-auto`} >
       <nav
         className="
 relative
