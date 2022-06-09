@@ -22,7 +22,7 @@ const Hero = () => {
             new user-interface.{' '}
           </p>
           <a 
-          className='py-4 px-8 border  hover:bg-white transition rounded font-thin'
+          className='py-4 px-8 border  hover:bg-white transition rounded font-thin text-xl'
           style={{letterSpacing: '6px'}}
           href={resume}  download="YourName resume.pdf"> Download Resume </a>
         </div>
