@@ -1,0 +1,35 @@
+.scrolling-image{
+    width: 100%;
+    height: 350px;
+    background: black;
+   
+    transition: ease-in-out 6s;
+
+    border-bottom: 2px solid black;
+}
+
+.help-bari{
+    background-image: url('../images/projects/help-bari.png');
+    background-size: cover;
+    background-position: top;
+}
+
+.perfume-stores{
+    background-image: url('../images/projects/perfume-stores.png');
+    background-size: cover;
+    background-position: top;
+}
+.immigration{
+    background-image: url('../images/projects/immigration.png');
+    background-size: cover;
+    background-position: top;
+}
+.convention{
+    background-image: url('../images/projects/convention.png');
+    background-size: cover;
+    background-position: top;
+}
+
+.scrolling-image:hover{
+    background-position: bottom;
+}
