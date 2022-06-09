@@ -1,9 +1,19 @@
-import React from 'react';
+// import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  // const [hex, setHex] = useState();
+
+  // const randomColor = () => {
+  //   const randomColor = "#" + Math.floor(Math.random() + 1677421).toString(16);
+
+  //   setHex(randomColor);
+  // }
+
+  // console.log(hex);
+
   return (
-    <div className="fixed top-0 left-0 w-full md:bg-transparent bg-white md:h-16 h-auto">
+    <div className={`fixed top-0 left-0 w-full   z-40  md:h-16 h-auto`} >
       <nav
         className="
 relative
@@ -99,6 +109,13 @@ navbar navbar-expand-lg navbar-light
                   Contact
                 </Link>
               </li>
+              {/* <li className="nav-item pr-2">
+                <button 
+                className='font-thin shadow-xl text-white'
+                onClick={randomColor}>
+                  Change Color
+                </button>
+              </li> */}
             </ul>
             {/* Left links */}
           </div>

@@ -8,7 +8,7 @@ import instagram from '../images/social/instagram.png';
 
 const Hero = () => {
     return (
-        <div className="md:h-screen bg-white md:mt-0 md:mb-0 mt-40 mb-12">
+        <div className="md:h-screen  md:mt-0 md:mb-0 pt-40 mb-12">
 
       <div className="md:flex justify-evenly items-center h-full px-12">
         <div className=' h-full w-full

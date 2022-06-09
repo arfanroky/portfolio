@@ -35,7 +35,7 @@ const Contact = () => {
        <div className='w-[400px] mt-4'>
        <label className=' font-thin capitalize text-lg'>Name:</label> <br />
         <input
-          className="py-3 pl-3 pr-8 border shadow-inner rounded outline-none w-full"
+          className="py-3 pl-3 pr-8 border shadow-inner rounded outline-none w-full bg-transparent"
           type="text"
           required
           name="user_name"
@@ -46,7 +46,7 @@ const Contact = () => {
        <div className='w-[400px] mt-4'>
        <label className=' font-thin capitalize text-lg'>Email</label> <br />
         <input
-          className="py-3 pl-2 pr-8 border shadow-inner rounded outline-none w-full"
+          className="py-3 pl-2 pr-8 border shadow-inner rounded outline-none w-full bg-transparent"
           type="email"
           name="user_email"
           autoComplete='off'
@@ -57,7 +57,7 @@ const Contact = () => {
        <div className='w-[400px] mt-4'>
        <label className=' font-thin capitalize text-lg'>Message:</label>
         <textarea
-          className="py-3 pl-2 pr-8 border shadow-inner rounded outline-none w-full resize-none "
+          className="py-3 pl-2 pr-8 border shadow-inner rounded outline-none w-full resize-none bg-transparent"
           name="message"
           autoComplete='off'
         />{' '}
