@@ -1,56 +1,62 @@
 import React from 'react';
+import resume from '../images/resume.pdf';
 import portfolioImg from '../images/person.png';
-import resume from '../images/resume.pdf'
-import facebook from '../images/social/facebook.png';
-import linkedin from '../images/social/linkedin.png';
-import twitter from '../images/social/twitter.png';
-import instagram from '../images/social/instagram.png';
 
 const Hero = () => {
-    return (
-        <div className="md:h-screen  md:mt-0 md:mb-0 pt-40 mb-12">
+  return (
+    <div>
+      <section className="py-4 bg-gradient-to-t from-black to-white">
+        <div className="px-6 py-12 md:px-12 text-gray-800 text-center lg:text-left">
+          <div className="container mx-auto xl:px-32">
+            <div className="grid lg:grid-cols-2 flex items-center">
+              <div className="md:mt-12 lg:mt-0 mb-12 lg:mb-0">
+                <div
+                  className="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+                  style={{
+                    background: 'hsla(0, 0%, 100%, 0.55)',
+                    backdropFilter: 'blur(30px)',
+                  }}
+                >
+                  <h1 className=" my-6">
+                    <span
+                      className=" capitalize text-xl mt-12"
+                      style={{ letterSpacing: '6px' }}
+                    >
+                      Hello, Everyone!
+                    </span>
+                    <br /> <br />
+                    <span className="text-4xl font-extrabold text-green-600">
+                      I'M Arfan Roky
+                    </span>{' '}
+                    <br />
+                    <span className="md:text-3xl xl:text-4xl text-3xl capitalize ">
+                      Front-End Developer
+                    </span>
+                  </h1>
+                  <a
+                    className="inline-block px-7 py-5 mb-2 md:mb-0 md:mr-2 bg-green-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
+                    style={{ letterSpacing: '3px' }}
+                    href={resume}
+                    download="YourName resume.pdf"
+                  >
+                    Download Resume
+                  </a>
+                </div>
+              </div>
 
-      <div className="md:flex justify-evenly items-center h-full px-12">
-        <div className=' h-full w-full
-        flex justify-center items-center flex-col '>
-        <div className='pl-8 pr-4'>
-        <p className=' font-thin capitalize text-lg
-          pl-3 mt-12' style={{letterSpacing: '6px'}}>Hello, Everyone</p>
-          <h1 className='mt-3'>
-            <span className=' font-bold text-9xl text-gray-200'>I'M</span> <br /> <br />
-            <span className='text-7xl font-semibold uppercase text-slate-700'>Arfan Roky</span>
-          </h1>
-          <p className=' mt-12 text-md pr-5' style={{letterSpacing: '3px', lineHeight: '2'}}>
-            As a Front-End Developer I have to take responsible for developing
-            new user-interface.{' '}
-          </p>
-          <ul className='flex  my-8 gap-x-4'>
-        <a href="https://www.facebook.com/arfan.roky.5" target='_blank'  rel="noreferrer">
-            <img className='w-12 h-12' src={facebook} alt="" />
-                </a>
-                <a href="https://www.linkedin.com/in/arfan-roky-46a5b023a/" target='_blank'  rel="noreferrer">
-                    <img className='w-12 h-12' src={linkedin} alt="" />
-                </a>
-                <a href="https://twitter.com/ArfanRoky" target='_blank'  rel="noreferrer">
-                    <img className='w-12 h-12' src={twitter} alt="" />
-                </a>
-                <a href="https://www.instagram.com/arfan.roky/?hl=en" target='_blank'  rel="noreferrer">
-                    <img className='w-12 h-12' src={instagram} alt="" />
-                </a>
-        </ul>
-          <a 
-          className='py-4 px-8 border  hover:bg-black hover:text-white transition rounded font-thin text-xl'
-          style={{letterSpacing: '6px'}}
-          href={resume}  download="YourName resume.pdf"> Download Resume </a>
+              <div className="md:mb-12 lg:mb-0 bg-slate-200">
+                <img
+                  src={portfolioImg}
+                  className="w-full rounded-lg shadow-2xl opacity-90"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-        <div className='h-full w-full
-        flex justify-center items-center flex-col ' >
-          <img className='w-1/2 shadow-lg mx-auto opacity-40 md:block hidden' src={portfolioImg} alt="" />
-        </div>
-      </div>
+      </section>
     </div>
-    );
+  );
 };
 
 export default Hero;

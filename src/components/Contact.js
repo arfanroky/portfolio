@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen grid md:grid-cols-2 grid-cols-1 justify-items-center items-center md:mt-0 md:mb-0 mt-40 mb-12">
+    <div className="min-h-screen grid md:grid-cols-2 grid-cols-1 justify-items-center items-center md:mt-0 md:mb-0 mt-40 mb-12 bg-gradient-to-t from-blue-500 to-white">
           <form className=" h-[500px] shadow-2xl py-12 px-12 rounded-2xl" ref={form} onSubmit={sendEmail}>
               <p className=' font-thin capitalize text-lg' style={{letterSpacing: '6px'}}>Contact Me__</p>
        <div className='w-[400px] mt-4'>

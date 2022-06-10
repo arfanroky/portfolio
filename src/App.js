@@ -9,6 +9,8 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import Projects from './components/Projects';
 import 'react-toastify/dist/ReactToastify.css';
+import ProjectDetails from './components/ProjectDetails';
+import Blog from './components/Blog';
 
 function App() {
   return (
@@ -19,7 +21,9 @@ function App() {
      <Route path='/' element={<Home/>}/>
      <Route path='/home' element={<Home/>}/>
      <Route path='/about' element={<About/>}/>
+     <Route path='/blog' element={<Blog/>}/>
      <Route path='/projects' element={<Projects/>}/>
+     <Route path='/details/:id' element={<ProjectDetails/>}/>
      <Route path='/contact' element={<Contact/>}/>
      <Route path='*' element={<NotFound/>}/>
    </Routes>
