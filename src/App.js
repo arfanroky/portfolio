@@ -5,18 +5,19 @@ import './App.css';
 import About from './components/About';
 import Contact from './components/Contact';
 import Home from './components/Home';
-import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import Projects from './components/Projects';
 import 'react-toastify/dist/ReactToastify.css';
 import ProjectDetails from './components/ProjectDetails';
 import Blog from './components/Blog';
+import NavItem from './components/NavItem';
 
 function App() {
   return (
    <>
    <ToastContainer></ToastContainer>
-   <Navbar/>
+   {/* <Navbar/> */}
+   <NavItem></NavItem>
    <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='/home' element={<Home/>}/>

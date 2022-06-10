@@ -8,11 +8,11 @@ const ProjectDetails = () => {
 
 
   const thisProject = ProjectsData.find((project) => project.id === id?.id);
-  console.log('detial',thisProject.img1);
+
   const {name,  item1, item2, item3, tech, title, img1, img2, img3, liveSite} = thisProject;
   return (
     <>
-      <div className="flex flex-col justify-center items-center min-h-screen py-12 bg-gray-100">
+      <div className="flex flex-col justify-center items-center min-h-screen py-12">
           <div
             id="carouselExampleIndicators"
             className="carousel slide relative"
@@ -41,7 +41,7 @@ const ProjectDetails = () => {
               />
             </div>
 
-            <div className="carousel-inner relative px-12 lg:w-[700px] overflow-hidden h-[450px] mt-12">
+            <div className="carousel-inner relative px-12 lg:w-[700px] overflow-hidden h-[450px] mt-12 shadow-2xl rounded">
               <div className="carousel-item active float-left w-full h-full">
                 <img
                   src={img1}
@@ -87,10 +87,10 @@ const ProjectDetails = () => {
               <span className="visually-hidden">Next</span>
             </button>
           </div>
-          <div className=" px-12 lg:w-[700px]">
+          <div className=" px-12 lg:w-[700px] shadow-2xl py-12">
             <p
-              className=" font-thin capitalize text-lg
-            py-4 "
+              className=" font-normal  text-lg
+            py-4 text-green-500 uppercase "
               style={{ letterSpacing: '6px' }}
             >
               {name}
@@ -109,7 +109,8 @@ const ProjectDetails = () => {
             </ul>
             <p className="py-3 tracking-wide">
               <span
-                className=" font-thin capitalize text-md
+                className=" font-normal capitalize text-md
+                text-green-500
             py-4 "
                 style={{ letterSpacing: '6px' }}
               >

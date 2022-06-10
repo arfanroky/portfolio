@@ -29,10 +29,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen grid md:grid-cols-2 grid-cols-1 justify-items-center items-center md:mt-0 md:mb-0 mt-40 mb-12 bg-gradient-to-t from-blue-500 to-white mx-auto">
-          <form className=" h-[500px] shadow-2xl py-12 px-12 rounded-2xl" ref={form} onSubmit={sendEmail}>
+    <div className="md:min-h-screen grid md:grid-cols-2 grid-cols-1 justify-items-center items-center md:mt-0 md:mb-0 mt-40 mb-12 ">
+          <form className=" md:mx-0 mx-3 h-[500px] shadow-2xl py-12 px-12 rounded-2xl" ref={form} onSubmit={sendEmail}>
               <p className=' font-thin capitalize text-lg' style={{letterSpacing: '6px'}}>Contact Me__</p>
-       <div className='w-[400px] mt-4'>
+       <div className='md:w-[400px]  mt-4'>
        <label className=' font-thin capitalize text-lg'>Name:</label> <br />
         <input
           className="py-3 pl-3 pr-8 border shadow-inner rounded outline-none w-full bg-transparent"
@@ -43,7 +43,7 @@ const Contact = () => {
         />{' '}
        </div>
        
-       <div className='w-[400px] mt-4'>
+       <div className='md:w-[400px] mt-4'>
        <label className=' font-thin capitalize text-lg'>Email</label> <br />
         <input
           className="py-3 pl-2 pr-8 border shadow-inner rounded outline-none w-full bg-transparent"
@@ -54,7 +54,7 @@ const Contact = () => {
        </div>
    
 
-       <div className='w-[400px] mt-4'>
+       <div className='md:w-[400px] mt-4'>
        <label className=' font-thin capitalize text-lg'>Message:</label>
         <textarea
           className="py-3 pl-2 pr-8 border shadow-inner rounded outline-none w-full resize-none bg-transparent"
@@ -70,7 +70,7 @@ const Contact = () => {
           value="Send"
         />
       </form>
-    <div className=' w-[450px] h-[500px] px-12 py-12 rounded-2xl shadow-2xl md:mt-0 mt-12'>
+    <div className=' md:w-[450px] h-[500px] px-12 py-12 rounded-2xl shadow-2xl md:mt-0 mt-12'>
     <p className=' font-thin capitalize text-lg  pt-12' style={{letterSpacing: '6px'}}>Contact Info__</p>
         <p className=' mb-8 mt-4 text-md pr-5' style={{letterSpacing: '3px', lineHeight: '2'}}>If needed any help and <br /> ask me any question then contact with me.</p>
         <ul>
