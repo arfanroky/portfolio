@@ -10,7 +10,8 @@ const ProjectsData = [
       "item1":"Multiplied Pages included and User-friendly Designed",
       "item2":"Created and managed product order option and payment also, it can be deleted by admin",
       "item3":"Ensured the order is completed and get a success message. After login by authenticated get different roles for the user & admin",
-      "tech": "for Front-End React, E6, Tailwind, daisy-UI, React-Query, React-Router, JWT, Firebase-hooks, React-hook-form, and for Backend Express Js, MongoDB Database."
+      "tech": "for Front-End React, E6, Tailwind, daisy-UI, React-Query, React-Router, JWT, Firebase-hooks, React-hook-form, and for Backend Express Js, MongoDB Database.",
+      "liveSite": "https://car-manufacturer.web.app/"
     },
     {
       "id": "2",
@@ -23,7 +24,8 @@ const ProjectsData = [
       "item1":"Stored product Procedures and managed products.",
       "item2":"Built responsive, and dynamic web pages to enable all users can navigate the site.",
       "item3":"Users can Add New products, Deliver products, Delete, and can see their added products.",
-      "tech": "for Front-End React, E6, Tailwind, Tw-elements, React-Router, JWT, Firebase-hooks, and for Backend Express Js, MongoDB Database."
+      "tech": "for Front-End React, E6, Tailwind, Tw-elements, React-Router, JWT, Firebase-hooks, and for Backend Express Js, MongoDB Database.",
+      "liveSite": "https://perfume-stores-site.web.app/"
     },
     {
       "id":"3",
@@ -36,7 +38,8 @@ const ProjectsData = [
       "item1":" Produced User Interface Immigration Static Website.",
       "item2":"Mainted a few courses & Provided visa services.",
       "item3":"Mainted a few courses & Provided visa services.",
-      "tech": "for Front-End React, E6, React-Bootstrap. Firebase-hooks, React-router"
+      "tech": "for Front-End React, E6, React-Bootstrap. Firebase-hooks, React-router",
+      "liveSite":"https://borrow-741c0.web.app/"
     }
   ]
 

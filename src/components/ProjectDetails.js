@@ -9,7 +9,7 @@ const ProjectDetails = () => {
 
   const thisProject = ProjectsData.find((project) => project.id === id?.id);
   console.log('detial',thisProject.img1);
-  const {name,  item1, item2, item3, tech, title, img1, img2, img3} = thisProject;
+  const {name,  item1, item2, item3, tech, title, img1, img2, img3, liveSite} = thisProject;
   return (
     <>
       <div className="flex flex-col justify-center items-center min-h-screen py-12 bg-gray-100">
@@ -120,17 +120,14 @@ const ProjectDetails = () => {
             </p>
             <br />
             <a
+            target='_blank' rel="noreferrer"
               className="py-4 px-12 border  hover:bg-black hover:text-white transition rounded font-thin text-xl mt-12"
               style={{ letterSpacing: '6px' }}
-              href="https://car-manufacturer.web.app/"
+              href={liveSite}
             >
               Watch
             </a>
           </div>
-        {/* <div className="w-[580px] pb-12 rounded-2xl shadow-2xl mb-12">
-
-
-        </div> */}
       </div>
     </>
   );
